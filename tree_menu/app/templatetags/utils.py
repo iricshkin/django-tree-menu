@@ -32,5 +32,4 @@ def additional_menu(context: dict, menu: str, querystring_args: list):
             querystring_args.append(
                 key_menu + '=' + context['request'].GET[key_menu]
             )
-    query = ('&').join(querystring_args)
-    return query
+    return ('&').join(querystring_args)

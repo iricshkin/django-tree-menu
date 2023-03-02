@@ -1,6 +1,7 @@
+from django import template
+
 from app.models import Item
 from app.templatetags.utils import additional_menu, child, filter_item_id_list
-from django import template
 
 register = template.Library()
 
